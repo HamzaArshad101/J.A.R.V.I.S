@@ -1,0 +1,7 @@
+{
+  "name": "J.A.R.V.I.S. - Stark Industries AI",
+  "description": "Tony Stark's intelligent holographic assistant featuring two-way voice conversation, audio synthesis, and Stark armor telemetry.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
