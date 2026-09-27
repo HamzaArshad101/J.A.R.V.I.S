@@ -17,6 +17,7 @@ interface ChatStreamProps {
 }
 
 const QUICK_PROMPTS = [
+  'Who created you, JARVIS?',
   'Status report on all systems, JARVIS',
   'What is the latest world technology news today?',
   'Current weather in Malibu and flight conditions',
@@ -76,6 +77,9 @@ export const ChatStream: React.FC<ChatStreamProps> = ({
             {micEnabled ? <Mic className="w-3 h-3" /> : <MicOff className="w-3 h-3" />}
             <span>{micEnabled ? 'MIC ON' : 'MIC OFF'}</span>
           </button>
+          <span className="hidden sm:inline-block text-[10px] font-mono text-cyan-300 bg-cyan-950/50 border border-cyan-500/30 px-2 py-0.5 rounded">
+            BY HAMZA ARSHAD
+          </span>
           <span className="text-[10px] font-mono text-slate-400 border border-slate-800 px-2 py-0.5 rounded">
             STARK-AI v5.2
           </span>

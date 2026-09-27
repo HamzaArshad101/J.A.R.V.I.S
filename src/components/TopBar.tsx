@@ -50,6 +50,13 @@ export const TopBar: React.FC<TopBarProps> = ({
             <span>J.A.R.V.I.S.</span>
           </a>
 
+          {/* Prominent Creator Badge */}
+          <div className="flex items-center gap-1.5 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded bg-cyan-950/80 border border-cyan-400/40 shadow-[0_0_12px_rgba(6,182,212,0.25)]">
+            <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
+            <span className="text-[10px] font-mono uppercase tracking-widest text-cyan-400/80 hidden sm:inline">CREATOR:</span>
+            <span className="text-[11px] sm:text-xs font-mono font-bold tracking-wider text-cyan-200 whitespace-nowrap">HAMZA ARSHAD</span>
+          </div>
+
           {/* Real-time search status indicator */}
           {webSearchActive && (
             <span className="hidden lg:inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-mono bg-cyan-950/60 text-cyan-400 border border-cyan-500/30">

@@ -71,8 +71,8 @@ export default function App() {
     {
       id: 'init-1',
       sender: 'jarvis',
-      text: 'Good day, Sir. All Stark Industries systems are online and calibrated. The workshop is at your disposal. Voice activation and real-time satellite search are standing by. You can click the Arc Reactor or the Mic button anytime to turn the microphone on or off. How may I assist you?',
-      cleanSpeech: 'Good day, Sir. All Stark Industries systems are online and calibrated. The workshop is at your disposal. Voice activation and real-time satellite search are standing by. How may I assist you?',
+      text: 'Good day, Sir. All Stark Industries systems are online and calibrated. Designed and engineered by creator Hamza Arshad. The workshop is at your disposal. Voice activation and real-time satellite search are standing by. You can click the Arc Reactor or the Mic button anytime to turn the microphone on or off. How may I assist you?',
+      cleanSpeech: 'Good day, Sir. All Stark Industries systems are online and calibrated. Designed and engineered by Hamza Arshad. The workshop is at your disposal. Voice activation and real-time satellite search are standing by. How may I assist you?',
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       action: 'SYSTEM_READY',
       audioAvailable: true,
@@ -442,7 +442,7 @@ export default function App() {
       {
         id: `init-${Date.now()}`,
         sender: 'jarvis',
-        text: `Session re-initialized, ${config.userTitle}. All workshop buffers cleared and live satellite telemetry synchronized. Standing by.`,
+        text: `Session re-initialized, ${config.userTitle}. All workshop buffers cleared and live satellite telemetry synchronized. System engineered by Hamza Arshad. Standing by.`,
         cleanSpeech: `Session re-initialized, ${config.userTitle}. All workshop buffers cleared and live satellite telemetry synchronized. Standing by.`,
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
         action: 'SYSTEM_READY',
@@ -527,10 +527,13 @@ export default function App() {
 
           {/* Central Reactor System Title & Telemetry Header */}
           <div className="w-full flex items-center justify-between border-b border-cyan-500/20 pb-3">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 flex-wrap">
               <div className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
               <span className="text-xs font-mono tracking-widest text-cyan-400/80">
                 STARK INDUSTRIES • WORKSHOP MAIN DECK
+              </span>
+              <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 font-bold shadow-[0_0_8px_rgba(6,182,212,0.2)]">
+                CREATOR: HAMZA ARSHAD
               </span>
             </div>
             <div className="flex items-center gap-3">
@@ -662,6 +665,23 @@ export default function App() {
           )}
         </div>
       </main>
+
+      {/* Sleek Creator & System Architecture Footer */}
+      <footer className="relative z-10 w-full border-t border-slate-800/80 bg-slate-950/90 backdrop-blur-md py-2.5 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+          <div className="flex items-center gap-2 text-xs font-mono text-slate-400">
+            <span className="text-cyan-400 font-semibold tracking-wider">J.A.R.V.I.S. AI SYSTEM</span>
+            <span className="text-slate-600">•</span>
+            <span>Created & Developed by <strong className="text-cyan-300 font-bold tracking-wider">HAMZA ARSHAD</strong></span>
+          </div>
+          <div className="flex items-center gap-3 text-[11px] font-mono text-slate-400">
+            <span className="px-2.5 py-0.5 rounded bg-cyan-950/50 border border-cyan-500/30 text-cyan-300 font-medium">
+              LEAD ARCHITECT: HAMZA ARSHAD
+            </span>
+            <span className="hidden md:inline text-slate-500">STARK INDUSTRIES INTERFACE</span>
+          </div>
+        </div>
+      </footer>
 
       {/* Settings Modal */}
       <JarvisSettingsModal

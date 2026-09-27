@@ -28,6 +28,8 @@ export const SuitTelemetry: React.FC<SuitTelemetryProps> = ({
           <div className="flex items-center gap-2 text-xs text-slate-400 mt-0.5">
             <span>Stark Industries OS v8.4</span>
             <span aria-hidden="true">·</span>
+            <span className="text-cyan-400 font-mono">Architect: Hamza Arshad</span>
+            <span aria-hidden="true">·</span>
             <span className="text-emerald-400 font-mono flex items-center gap-1">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
               ONLINE

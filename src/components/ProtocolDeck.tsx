@@ -79,7 +79,9 @@ export const ProtocolDeck: React.FC<ProtocolDeckProps> = ({
             Pre-configured executive command directives for J.A.R.V.I.S.
           </p>
         </div>
-        <div className="text-xs font-mono text-slate-500">DIRECT ENCRYPTION 256-BIT</div>
+        <div className="text-xs font-mono text-cyan-400/90 bg-cyan-950/50 border border-cyan-500/30 px-2 py-0.5 rounded">
+          ARCHITECT: HAMZA ARSHAD
+        </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">

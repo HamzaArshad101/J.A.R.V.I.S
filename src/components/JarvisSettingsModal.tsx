@@ -65,6 +65,29 @@ export const JarvisSettingsModal: React.FC<JarvisSettingsModalProps> = ({
           </div>
         </div>
 
+        {/* Creator & System Architect Spotlight */}
+        <div className="p-3 bg-gradient-to-r from-cyan-950/70 via-slate-900 to-slate-950 border border-cyan-500/40 rounded-lg mb-4 flex items-center justify-between shadow-[0_0_20px_rgba(6,182,212,0.15)]">
+          <div className="flex items-center gap-3">
+            <div className="w-9 h-9 rounded-lg bg-cyan-500/20 border border-cyan-400/50 flex items-center justify-center text-cyan-300 font-mono font-bold text-sm shadow-[0_0_10px_rgba(6,182,212,0.3)]">
+              HA
+            </div>
+            <div>
+              <div className="text-[10px] font-mono text-cyan-400 uppercase tracking-widest font-semibold">
+                SYSTEM CREATOR & ARCHITECT
+              </div>
+              <div className="text-sm font-mono font-bold text-white tracking-wider flex items-center gap-2">
+                HAMZA ARSHAD
+                <span className="text-[10px] font-mono font-normal text-emerald-400 bg-emerald-950/50 px-1.5 py-0.2 rounded border border-emerald-500/30">
+                  VERIFIED
+                </span>
+              </div>
+            </div>
+          </div>
+          <span className="text-[10px] font-mono text-cyan-300/80 bg-cyan-950/60 border border-cyan-500/30 px-2 py-1 rounded">
+            ORIGINAL AUTHOR
+          </span>
+        </div>
+
         <div className="space-y-5">
           {/* Honorific / Address */}
           <div>
